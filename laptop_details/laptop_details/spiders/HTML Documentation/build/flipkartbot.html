@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>flipkartbot module &#8212; flipkartcrawl_laptops 29th May 2019 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-flipkartbot">
+<span id="flipkartbot-module"></span><h1>flipkartbot module<a class="headerlink" href="#module-flipkartbot" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="flipkartbot.FlipkartbotSpider">
+<em class="property">class </em><code class="descclassname">flipkartbot.</code><code class="descname">FlipkartbotSpider</code><span class="sig-paren">(</span><em>iparg1=''</em>, <em>iparg2=''</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#flipkartbot.FlipkartbotSpider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">scrapy.spiders.Spider</span></code></p>
+<p>The spider is run by the python file run.py from the command line. 
+Command line input should be of the form python run.py number_of_laptops pickle_directory</p>
+<dl class="attribute">
+<dt id="flipkartbot.FlipkartbotSpider.allowed_domains">
+<code class="descname">allowed_domains</code><em class="property"> = ['flipkart.com']</em><a class="headerlink" href="#flipkartbot.FlipkartbotSpider.allowed_domains" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="flipkartbot.FlipkartbotSpider.k">
+<code class="descname">k</code><em class="property"> = 1</em><a class="headerlink" href="#flipkartbot.FlipkartbotSpider.k" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="flipkartbot.FlipkartbotSpider.laptops_dict">
+<code class="descname">laptops_dict</code><em class="property"> = {}</em><a class="headerlink" href="#flipkartbot.FlipkartbotSpider.laptops_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dictionary that will be populated with laptop details</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="flipkartbot.FlipkartbotSpider.name">
+<code class="descname">name</code><em class="property"> = 'flipkartbot'</em><a class="headerlink" href="#flipkartbot.FlipkartbotSpider.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="flipkartbot.FlipkartbotSpider.page_num">
+<code class="descname">page_num</code><em class="property"> = 1</em><a class="headerlink" href="#flipkartbot.FlipkartbotSpider.page_num" title="Permalink to this definition">¶</a></dt>
+<dd><p>page_num is the number of the current page being scraped</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="flipkartbot.FlipkartbotSpider.parse">
+<code class="descname">parse</code><span class="sig-paren">(</span><em>response</em><span class="sig-paren">)</span><a class="headerlink" href="#flipkartbot.FlipkartbotSpider.parse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="flipkartbot.FlipkartbotSpider.start_urls">
+<code class="descname">start_urls</code><em class="property"> = ['https://www.flipkart.com/search?q=laptop&amp;sid=6bo%2Cb5g&amp;as=on&amp;as-show=on&amp;otracker=AS_QueryStore_OrganicAutoSuggest_0_6&amp;otracker1=AS_QueryStore_OrganicAutoSuggest_0_6&amp;as-pos=0&amp;as-type=RECENT&amp;as-searchtext=loptop&amp;page=1']</em><a class="headerlink" href="#flipkartbot.FlipkartbotSpider.start_urls" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">flipkartcrawl_laptops</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Suhas HV.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/flipkartbot.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
